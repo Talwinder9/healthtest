@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h3>Male</h3>
+<div *ngFor="let res of result">
+   <a *ngIf="res.gender == 'Male'">
+     <div *ngFor="let res1 of res.pets">
+        <a *ngIf="res1.type == 'Cat'">
+           <li> {{res1.name}}</li> 
+          </a>
+        </div>
+   </a>
+</div>
+<h3>Female</h3>
+<div *ngFor="let res of result">
+    <a *ngIf="res.gender == 'Female'">
+        <div *ngFor="let res1 of res.pets">
+           <a *ngIf="res1.type == 'Cat'">
+              <li> {{res1.name}}</li>
+             </a>
+           </div>
+      </a>
+</div>
